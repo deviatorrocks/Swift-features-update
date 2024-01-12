@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="22505" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZa-Qb-1Jx">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="ColdStar" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="8pb-B3-pMl">
+                                <rect key="frame" x="80" y="157" width="1760" height="863"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ogn-uv-82a"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iMb-Or-UqS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8pb-B3-pMl" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="YHf-bQ-g2J"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="8pb-B3-pMl" secondAttribute="trailing" id="iIw-6B-dmF"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="8pb-B3-pMl" secondAttribute="bottom" id="pv9-ox-UbN"/>
+                            <constraint firstItem="8pb-B3-pMl" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="wvb-Hc-VkR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="oDK-t0-Kf7"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="8pb-B3-pMl" id="k7U-eS-Ejz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="3"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Y5s-rK-saf">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" title="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7n6-WA-Rxx" customClass="SearchViewController" customModule="ColdStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B4M-u6-seZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="x79-NS-Btf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="16Q-5d-G23">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FWz-ET-NnT"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="gGQ-0V-ufM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-H4-hdx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="-1428"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="0mA-IX-y0q">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gX9-Qj-qvC" customClass="ProfileViewController" customModule="ColdStar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0TA-hj-GsK"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUF-We-tTk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GNI-eI-MQv">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2wJ-BC-722"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="cEZ-LD-WEU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkN-lk-1Zf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="1545"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hCF-5q-QD1">
+            <objects>
+                <tabBarController id="IZa-Qb-1Jx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bar-mm-D3L">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9li-S6-jOA"/>
+                        <segue destination="7n6-WA-Rxx" kind="relationship" relationship="viewControllers" id="3tt-iM-aTa"/>
+                        <segue destination="gX9-Qj-qvC" kind="relationship" relationship="viewControllers" id="3C0-u0-yn7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUQ-qb-WMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2544" y="-80"/>
+        </scene>
+    </scenes>
+</document>

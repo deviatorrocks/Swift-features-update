@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="22505" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideosTableViewCell" id="yle-uA-WgM" customClass="VideosTableViewCell" customModule="ColdStar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1936" height="540"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yle-uA-WgM" id="tCt-hw-0uL">
+                <rect key="frame" x="0.0" y="0.0" width="1936" height="540"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFW-k6-tLo">
+                        <rect key="frame" x="0.0" y="0.0" width="1936" height="64"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Gw-h6-afy">
+                        <rect key="frame" x="0.0" y="80" width="1936" height="460"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="460" id="fwD-QD-tgU"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QhL-76-5bl">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Gw-h6-afy" firstAttribute="top" secondItem="yFW-k6-tLo" secondAttribute="bottom" constant="16" id="CE7-6E-Q3g"/>
+                    <constraint firstItem="2Gw-h6-afy" firstAttribute="leading" secondItem="tCt-hw-0uL" secondAttribute="leading" id="Oon-61-zWA"/>
+                    <constraint firstAttribute="trailing" secondItem="2Gw-h6-afy" secondAttribute="trailing" id="ToC-Uc-mzB"/>
+                    <constraint firstItem="yFW-k6-tLo" firstAttribute="top" secondItem="tCt-hw-0uL" secondAttribute="top" id="aeq-2o-KXm"/>
+                    <constraint firstAttribute="trailing" secondItem="yFW-k6-tLo" secondAttribute="trailing" id="dvF-xS-lgk"/>
+                    <constraint firstItem="yFW-k6-tLo" firstAttribute="leading" secondItem="tCt-hw-0uL" secondAttribute="leading" id="kMN-t8-2Jd"/>
+                    <constraint firstAttribute="bottom" secondItem="2Gw-h6-afy" secondAttribute="bottom" id="sw0-1z-4tg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="heightConstraint" destination="fwD-QD-tgU" id="PJi-SS-UJE"/>
+                <outlet property="titleLabel" destination="yFW-k6-tLo" id="UgC-IB-4rf"/>
+                <outlet property="videoCollectionView" destination="2Gw-h6-afy" id="Hpo-Sw-M4g"/>
+            </connections>
+            <point key="canvasLocation" x="-90" y="-35"/>
+        </tableViewCell>
+    </objects>
+</document>
